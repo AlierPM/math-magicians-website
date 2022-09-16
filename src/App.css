@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.calContainer {
+  display: grid;
+  place-items: center;
+}
+
+.calculator-grid {
+  display: grid;
+  margin: 2em 0;
+  left: 25%;
+  right: 20%;
+  top: 10%;
+  grid-template-columns: repeat(8, 6rem);
+}
+
+.cal-center {
+  margin: 0 auto;
+}
+
+.span-two {
+  grid-column: span 4;
+  font-size: 20px;
+  text-align: center;
+}
+
+.output {
+  grid-column: 1 / -1;
+  background-color: #858694;
+  height: 10vh;
+  text-align: center;
+  margin-top: 0;
+}
+
+.btn {
+  height: 5rem;
+  font-size: 20px;
+  text-align: center;
+  grid-column: span 2;
+}
+
+.btn:hover {
+  color: black;
+  outline: 0.05em solid grey;
+  z-index: 3;
+}
+
+.btn:active {
+  color: gold;
+  outline: 0.05em solid #f5913e;
+  z-index: 3;
+}
+
+.function-btn {
+  height: 5rem;
+  font-size: 20px;
+  text-align: center;
+  background-color: #f5913e;
+  grid-column: span 2;
+}
+
+.function-btn:hover {
+  color: #fff;
+  outline: 0.05em solid grey;
+  background-color: #f5913f;
+  z-index: 3;
+}
+
+.current-operand {
+  color: white;
+  text-align: right;
+  font-size: 42px;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 10px;
+}
