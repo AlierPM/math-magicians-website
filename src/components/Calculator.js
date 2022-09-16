@@ -2,7 +2,6 @@ import React from 'react';
 import '../App.css';
 import calculate from '../logic/calculate';
 
-/* eslint-disable react/destructuring-assignment */
 class Calculator extends React.Component {
   constructor() {
     super();
@@ -16,20 +15,20 @@ class Calculator extends React.Component {
   }
 
   onClickHandler = (e) => {
-    // eslint-disable-next-line react/no-access-state-in-setstate
-    this.setState(calculate(this.state, e.target.textContent));
+    this.setState((prevState) => calculate(prevState, e.target.textContent));
   };
 
   render() {
+    const { total, operation, next } = this.state;
     return (
       <div className="calContainer">
         <div className="calculator-grid">
           <div className="output">
             <div className="previous-operand" />
             <div className="current-operand">
-              {this.state.total}
-              {this.state.operation}
-              {this.state.next}
+              {total}
+              {operation}
+              {next}
             </div>
           </div>
 
