@@ -12,6 +12,17 @@ body {
 .calContainer {
   display: grid;
   place-items: center;
+  margin-top: 2em;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.flex-container .cal-title {
+  margin: 1.2em 0 0 3.5em;
 }
 
 .calculator-grid {
@@ -81,4 +92,89 @@ body {
   font-size: 42px;
   font-family: 'Times New Roman', Times, serif;
   padding: 10px;
+}
+
+ul li {
+  list-style: none;
+  color: #f5913e;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-menu {
+  padding-right: 1.5em;
+  position: relative;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 500px;
+  font-family: 'Lato', sans-serif;
+  color: #f5913e;
+}
+
+.line {
+  font-size: 24px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+  margin-top: 2em;
+  color: #f5913e;
+}
+
+.title {
+  margin-left: 5em;
+}
+
+.home-container {
+  max-width: 80%;
+  margin: 2em 9.7em;
+}
+
+.home-title {
+  margin-bottom: 2em;
+}
+
+.home-text {
+  margin-top: 1em;
+  font-size: 18px;
+}
+
+.quote {
+  margin-top: 5em;
+  text-align: center;
+  font-size: 20px;
+}
+
+@media (max-width: 800px) {
+  /* CSS for wide screens */
+  .flex-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flex-container .cal-title {
+    margin-bottom: 2em;
+  }
+
+  .calculator-grid {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .cal-frame {
+    margin-left: 4em;
+    margin-bottom: 2em;
+  }
 }
