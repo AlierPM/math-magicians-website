@@ -13,17 +13,6 @@
     "react-scripts": "5.0.1",
     "react-test-renderer": "^18.2.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/AlierPM/math-magicians-website.git"
-  },
-  "keywords": [],
-  "author": "Alier Philip Maguet",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AlierPM/math-magicians-website/issues"
-  },
-  "homepage": "https://alierpm.github.io/math-magicians-website",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
